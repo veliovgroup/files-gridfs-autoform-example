@@ -1,5 +1,7 @@
 <template name="listPersons">
+  <ul class="list-group">
   {{#each persons}}
+    <li class="list-group-item">
     {{#if update _id}}
       {{> quickForm type="update" collection="Persons" doc=this id=getFormId}}
       <button data-button-update class="btn btn-danger">Cancel</button>
@@ -12,5 +14,7 @@
       </div>
       <button data-button-update class="btn btn-default">Update</button>
     {{/if}}
+    </li>
   {{/each}}
+  </ul>
 </template>
