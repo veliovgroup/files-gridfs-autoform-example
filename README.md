@@ -1,6 +1,6 @@
 # AutoForm file upload with ostrio:files and GridFS integration
 
-This a working example of [ostrio:files](https://github.com/VeliovGroup/Meteor-Files) with easy integration for AutoForm nad moving the files to a custom GridFS bucket.
+This a working example of [ostrio:files](https://github.com/VeliovGroup/Meteor-Files) with easy integration for [AutoForm files](https://github.com/VeliovGroup/meteor-autoform-file) and moving the files to a custom GridFS bucket.
 
 This example shows
 
