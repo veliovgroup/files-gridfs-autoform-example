@@ -6,8 +6,8 @@
 
 meteor-base@1.4.0             # Packages every Meteor app needs to have
 templating
-mobile-experience@1.0.5       # Packages for a great mobile UX
-mongo@1.8.0                   # The database Meteor supports right now
+mobile-experience@1.1.0       # Packages for a great mobile UX
+mongo@1.9.0                   # The database Meteor supports right now
 blaze-html-templates@1.0.4    # Compile .html files into Meteor Blaze views
 reactive-var@1.0.11            # Reactive variable for tracker
 jquery@1.11.10                  # Helpful client-side library
@@ -27,8 +27,8 @@ aldeed:autoform
 raix:handlebar-helpers
 dburles:collection-helpers
 dburles:mongo-collection-instances
-accounts-base@1.5.0
+accounts-base@1.6.0
 ostrio:autoform-files
-shell-server@0.4.0
+shell-server@0.5.0
 dynamic-import@0.5.1
 underscore@1.0.10
