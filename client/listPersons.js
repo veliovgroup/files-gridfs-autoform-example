@@ -1,7 +1,18 @@
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';            // optional, default theme
+import '@fortawesome/fontawesome-free/js/all.js'; // optional, is using FA5
+import popper from 'popper.js';
+
+import 'meteor/aldeed:autoform/static';
 import { Template }      from 'meteor/templating';
 import { Persons }       from '/lib/persons.js';
 import { ReactiveVar }   from 'meteor/reactive-var';
 
+import { AutoFormThemeBootstrap4 } from 'meteor/communitypackages:autoform-bootstrap4/static';
+
+AutoFormThemeBootstrap4.load();
+
+window.Popper = popper;
 window.Persons = Persons;
 
 Template.listPersons.onCreated(function(){

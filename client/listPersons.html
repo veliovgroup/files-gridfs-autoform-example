@@ -3,6 +3,7 @@
   {{#each persons}}
     <li class="list-group-item">
     {{#if update _id}}
+      <pre>{{log this getFormId}}</pre>
       {{> quickForm type="update" collection="Persons" doc=this id=getFormId}}
       <button data-button-update class="btn btn-danger">Cancel</button>
     {{else}}
