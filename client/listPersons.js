@@ -8,9 +8,11 @@ import { Template }      from 'meteor/templating';
 import { Persons }       from '/lib/persons.js';
 import { ReactiveVar }   from 'meteor/reactive-var';
 
+import { AutoForm } from 'meteor/aldeed:autoform';
 import { AutoFormThemeBootstrap4 } from 'meteor/communitypackages:autoform-bootstrap4/static';
 
 AutoFormThemeBootstrap4.load();
+AutoForm.setDefaultTemplate('bootstrap4');
 
 window.Popper = popper;
 window.Persons = Persons;

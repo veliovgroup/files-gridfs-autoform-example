@@ -1,12 +1,9 @@
 <template name="newPerson">
   <h1>newPerson</h1>
   {{#autoForm collection="Persons" type="insert" id="insertPerson"}}
-    <fieldset>
-      <legend>Add Person</legend>
-      {{> afFieldInput name="name"}}
-      {{> afFieldInput name="profilePicId" chunkSize="1024"}}
-      {{> afFieldInput name="backgroundPicId" streams="1"}}
-    </fieldset>
+    {{> afQuickField name="name"}}
+    {{> afQuickField name="profilePicId" chunkSize="1024"}}
+    {{> afQuickField name="backgroundPicId" streams="1"}}
     <button class="btn btn-primary" type="submit">Submit</button>
   {{/autoForm}}
 </template>
